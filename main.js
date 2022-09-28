@@ -58,11 +58,7 @@ function filtro(inputID) {
 }
 
 function error() {
-    const nroPizza = input.value.trim();
-    if (!nroPizza.length){
-        localStorage.removeItem(pizzaLs);
-        alert('Por favor, ingrese un ID');
-    return;}
+    alert('No existe pizza para el número ingresado');
     }
 
 
