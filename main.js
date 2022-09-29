@@ -59,9 +59,12 @@ function filtro(inputID) {
 
 function error() {
  /*   alert('No existe pizza para el número ingresado');*/
-   Swal.fire('No existe pizza para el número ingresado',
-    'Haz click en el botón',
-    'success');
+ Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'No existe pizza para el número ingresado!',
+    footer: 'Intenta Ingresar Otro Valor</a>'
+  });
     }
 
 
